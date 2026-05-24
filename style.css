@@ -448,3 +448,30 @@ h1, h2, h3, h4, .font-heading {
   .header__hamburger.active span:last-child { transform: translateY(-5px) rotate(-45deg); }
   .modal__grid { grid-template-columns: 1fr; }
 }
+<style>
+    @media (min-width: 992px) {
+        .timeline-mobile { display: none !important; }
+        .timeline-desktop { display: block !important; }
+    }
+
+    @media (max-width: 991px) {
+        .timeline-desktop { display: none !important; }
+        .timeline-mobile { display: block !important; }
+    }
+
+    .timeline-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        border-color: #0070F3;
+        box-shadow: 0 16px 50px rgba(0, 112, 243, 0.12);
+    }
+
+    .timeline-card:active {
+        transform: translateY(-4px) scale(0.99);
+    }
+
+    @media (max-width: 768px) {
+        .timeline-wrapper {
+            padding: 0 1rem;
+        }
+    }
+</style>
