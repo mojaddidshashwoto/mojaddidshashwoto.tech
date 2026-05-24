@@ -475,3 +475,12 @@ h1, h2, h3, h4, .font-heading {
         }
     }
 </style>
+/* Media Queries for the new Process Section */
+@media (min-width: 769px) {
+    .timeline-desktop { display: block !important; }
+    .timeline-mobile { display: none !important; }
+}
+@media (max-width: 768px) {
+    .timeline-desktop { display: none !important; }
+    .timeline-mobile { display: block !important; }
+}
